@@ -34,7 +34,7 @@
 
 		flash_memory: region@5c000000 {
 			no-map;
-			reg = <0x5C000000 0x02000000>; /* 32MB */
+			reg = <0x5C000000 0x04000000>; /* 64MB Change this back to 32MB at some point in the future.*/
 		};
 	};
 
