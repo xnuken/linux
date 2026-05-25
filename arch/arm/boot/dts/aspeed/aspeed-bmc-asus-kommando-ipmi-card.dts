@@ -161,7 +161,7 @@
 };
 
 &fsim0 {
-
+	status = "okay";
 };
 
 &pwm_tach {
