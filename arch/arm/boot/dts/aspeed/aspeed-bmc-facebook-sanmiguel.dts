@@ -224,7 +224,7 @@
 			"B0_M0_LEAK_DETECT_ALERT_L-I",
 			"B0_M0_RUN_POWER_EN-O",
 			"B0_M0_RUN_POWER_PG-I",
-			"B0_M0_CPU_CHIPTHROT_L-O",
+			"B0_M0_CPU_CHIPTHROT_L-I",
 			"B0_M0_SHDN_REQ_L-O",
 			"B0_M0_CPU_SHDN_OK_L-I",
 			"B0_M0_CPLD_READY-I",
@@ -334,6 +334,8 @@
 		reg = <0x20>;
 		gpio-controller;
 		#gpio-cells = <2>;
+		interrupt-parent = <&gpio1>;
+		interrupts = <ASPEED_GPIO(B, 6) IRQ_TYPE_LEVEL_LOW>;
 
 		gpio-line-names =
 			"", "", "HMC_EROT_FATAL_ERROR_L-I", "",
@@ -396,7 +398,7 @@
 			"B1_M0_LEAK_DETECT_ALERT_L-I",
 			"B1_M0_RUN_POWER_EN-O",
 			"B1_M0_RUN_POWER_PG-I",
-			"B1_M0_CPU_CHIPTHROT_L-O",
+			"B1_M0_CPU_CHIPTHROT_L-I",
 			"B1_M0_SHDN_REQ_L-O",
 			"B1_M0_CPU_SHDN_OK_L-I",
 			"B1_M0_CPLD_READY-I",
@@ -552,6 +554,8 @@
 		reg = <0x38>;
 		gpio-controller;
 		#gpio-cells = <2>;
+		interrupt-parent = <&gpio1>;
+		interrupts = <ASPEED_GPIO(B, 6) IRQ_TYPE_LEVEL_LOW>;
 
 		gpio-line-names =
 			"SSD0_PRSNT_L-I", "E1S_PWR_EN-O",
